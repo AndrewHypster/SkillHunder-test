@@ -1,0 +1,33 @@
+footer
+  margin: 220px auto 80px
+  font-size: 12px
+  justify-content: space-between
+  display: flex
+
+  .logo
+    gap: 20px
+    display: grid
+    .policy
+      gap: 20px
+      display: flex
+  .contacts
+    gap: 40px
+    display: flex
+    button
+      height: fit-content
+      padding: 12px 24px
+      text-transform: uppercase
+      border: none
+      border-radius: 100vw
+      background: var(--Orange)
+      font-weight: 700
+  @media (max-width: 755px)
+    width: fit-content
+    gap: 36px
+    display: grid
+    .contacts
+      height: fit-content
+      grid-area: 1
+      gap: 16px
+      flex-direction: column-reverse
+      text-align: center

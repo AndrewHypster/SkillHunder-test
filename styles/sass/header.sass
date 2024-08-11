@@ -1,0 +1,106 @@
+header
+  width: 100vw
+  max-width: 880px
+  padding: 0 18px
+  margin-top: 19px
+  align-items: center
+  font-family: "Raleway", sans-serif
+  justify-content: space-between
+  display: flex
+
+.header-nav
+  gap: 2.5rem
+  align-items: center
+  justify-content: space-between
+  display: flex
+
+.header-links
+  font-size: 11px
+  font-weight: 600
+  text-transform: uppercase
+  white-space: nowrap
+  gap: 1.5rem
+  display: flex
+
+  @media (max-width: 830px)
+    display: none
+
+  a::after
+      content: ""
+      width: 0px
+      height: 1px
+      background: var(--White)
+      transition: all 0.3s
+      display: block
+
+  a:hover::after
+      width: 100%
+
+.header-contact
+  gap: 2.5rem
+  display: flex
+  @media (max-width: 830px)
+    display: none
+
+.header-contact-text
+  font-weight: 400
+  font-size: 12px
+  font-style: normal
+  align-self: flex-end
+
+.header-button
+  width: 12.125rem
+  height: 41px
+  background: var(--Orange)
+  border: none
+  border-radius: 100vw
+  text-transform: uppercase
+  font-family: "Raleway", sans-serif
+  font-size: 12px
+  font-weight: 700
+
+//Меню для телефонів
+.menu-img
+  display: none
+  @media (max-width: 830px)
+    display: block
+  
+#sidebar
+  position: fixed
+  z-index: 10
+  top: 0
+  left: 100%
+  width: 100vw
+  height: 100vh
+  padding: 2rem
+  background: var(--Black)
+  &:target
+    left: 0%
+
+  .hidden-menu
+    position: absolute
+    right: 20%
+    font-size: 2rem
+    font-weight: 200
+    display: block
+    &:hover
+      transform: rotate(45deg)
+
+  .header-links
+    margin-top: 2rem
+    font-size: 1.5rem
+    gap: 1rem
+    display: grid
+    *
+      width: fit-content
+
+  .header-contact
+    margin-top: 2rem
+    gap: 0.5rem
+    display: grid
+    p
+      font-size: 1rem
+    button
+      width: fit-content
+      padding: 0.8rem
+      font-size: 1rem

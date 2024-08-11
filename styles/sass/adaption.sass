@@ -1,0 +1,38 @@
+.adaption
+  position: relative
+  margin-top: 174px
+  flex-wrap: wrap
+  justify-content: space-between
+  display: flex
+  @media (max-width: 868px)
+    justify-content: center
+
+  ul
+    margin-top: 56px
+    gap: 12px
+    display: grid
+    li
+      max-width: 495px
+      width: fit-content
+      font-size: 14px
+      color: var(--Gray)
+      line-height: 120%
+      &::before
+        content: "-"
+        margin-right: 8px
+    @media (max-width: 868px)
+      margin-bottom: 40px
+
+  .circle
+    position: absolute
+    z-index: -1
+    bottom: 0
+    right: -400px
+    width: 509px
+    height: 509px
+    background: linear-gradient(to top, var(--White), #7F97C6)
+    border-radius: 50%
+    filter: blur(200px)
+    display: none
+    @media (max-width: 868px)
+      display: block

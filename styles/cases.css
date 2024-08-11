@@ -1,0 +1,118 @@
+.cases {
+  margin-top: 86px;
+  gap: 50px;
+  display: grid;
+}
+.cases .case {
+  position: relative;
+  justify-content: space-between;
+  display: flex;
+}
+@media (max-width: 790px) {
+  .cases .case {
+    flex-direction: column-reverse !important;
+  }
+}
+.cases .case ul {
+  position: relative;
+  height: 528px;
+  gap: 8px;
+  display: flex;
+}
+@media (max-width: 790px) {
+  .cases .case ul {
+    margin: 0 auto;
+  }
+  .cases .case ul li {
+    position: absolute;
+  }
+}
+.cases .case ul li:hover {
+  margin-top: -50px;
+}
+.cases .case ul .down {
+  align-self: end;
+}
+.cases .case ul .center {
+  align-self: center;
+}
+@media (max-width: 790px) {
+  .cases .case ul .up {
+    left: 0;
+    align-self: center;
+  }
+  .cases .case ul .center {
+    left: 50%;
+    transform: translate(-50%);
+    align-self: start;
+  }
+  .cases .case ul .down {
+    right: 0;
+  }
+}
+.cases .case ul::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 257px;
+  height: 257px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(to bottom, var(--White), var(--Blue));
+  filter: blur(150px);
+}
+.cases .case .text {
+  width: 172px;
+  height: fit-content;
+  margin-top: 100px;
+  gap: 16px;
+  display: grid;
+}
+@media (max-width: 790px) {
+  .cases .case .text {
+    margin: 0 auto 64px;
+    text-align: center;
+  }
+}
+.cases .case .text h5 {
+  font-size: 11px;
+  color: var(--Orange);
+}
+.cases .case .text p {
+  font-size: 14px;
+  color: var(--Gray);
+  line-height: 140%;
+}
+.cases .case .text-case {
+  position: absolute;
+  z-index: -1;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
+}
+@media (max-width: 790px) {
+  .cases .case .text-case {
+    top: 50%;
+    transform: translate(-50%, -40%);
+  }
+}
+.cases .case .text-case img {
+  transform: rotate(-20deg);
+}
+@media (max-width: 790px) {
+  .cases .case .text-case img {
+    transform: rotate(20deg) !important;
+  }
+}
+.cases .reverse-case {
+  flex-direction: row-reverse;
+}
+.cases .reverse-case ul {
+  flex-direction: row-reverse;
+}
+.cases .reverse-case .text-case img {
+  transform: rotate(30deg);
+}
+
+/*# sourceMappingURL=cases.css.map */

@@ -1,0 +1,88 @@
+.cases
+  margin-top: 86px
+  gap: 50px
+  display: grid
+
+  .case
+    position: relative
+    justify-content: space-between
+    display: flex
+    @media (max-width: 790px)
+      flex-direction: column-reverse !important
+
+    ul
+      position: relative
+      height: 528px
+      gap: 8px
+      display: flex
+      @media (max-width: 790px)
+        margin: 0 auto
+        li
+          position: absolute
+
+      li
+        &:hover
+          margin-top: -50px
+      .down
+        align-self: end
+      .center
+        align-self: center
+      @media (max-width: 790px)
+        .up
+          left: 0
+          align-self: center
+        .center
+          left: 50%
+          transform: translate(-50%)
+          align-self: start
+        .down
+          right: 0
+        
+      &::before
+        content: ""
+        position: absolute
+        z-index: -1
+        width: 257px
+        height: 257px
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        background: linear-gradient(to bottom, var(--White), var(--Blue))
+        filter: blur(150px)
+    .text
+      width: 172px
+      height: fit-content
+      margin-top: 100px
+      gap: 16px
+      display: grid
+      @media (max-width: 790px)
+        margin: 0 auto 64px
+        text-align: center
+      h5
+        font-size: 11px
+        color: var(--Orange)
+      p
+        font-size: 14px
+        color: var(--Gray)
+        line-height: 140%
+    .text-case
+      position: absolute
+      z-index: -1
+      bottom: 0
+      left: 50%
+      transform: translate(-50%)
+      @media (max-width: 790px)
+        top: 50%
+        transform: translate(-50%, -40%)
+      img
+        transform: rotate(-20deg)
+        @media (max-width: 790px)
+          transform: rotate(20deg) !important
+
+  .reverse-case
+    flex-direction: row-reverse
+    ul
+      flex-direction: row-reverse
+    .text-case
+      img
+        transform: rotate(30deg)

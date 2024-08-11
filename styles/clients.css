@@ -1,0 +1,35 @@
+.clients {
+  position: relative;
+  margin-top: 290px;
+}
+.clients .slides {
+  position: absolute;
+  left: -250px;
+}
+.clients .slides .marquee {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  box-sizing: border-box;
+  padding: 10px;
+}
+.clients .slides .marquee .marquee-content {
+  display: inline-block;
+  animation: marquee 38s linear infinite;
+  gap: 38px;
+  display: flex;
+}
+.clients .slides .marquee .slow {
+  animation: marquee 33s linear infinite;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/*# sourceMappingURL=clients.css.map */

@@ -1,0 +1,35 @@
+.experience {
+  margin-top: 120px;
+}
+.experience h2 {
+  text-transform: uppercase;
+}
+.experience ul {
+  grid-template-rows: repeat(3, 200px);
+  display: grid;
+}
+.experience ul .circle {
+  width: 189px;
+  height: 189px;
+  background: var(--White);
+  border: 14px solid var(--Black);
+  border-radius: 50%;
+  box-shadow: 0 0 2px var(--White);
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  display: flex;
+}
+.experience ul .circle h5 {
+  width: 111px;
+}
+.experience ul .right {
+  justify-self: end;
+}
+@media (max-width: 740px) {
+  .experience ul {
+    grid-template-rows: auto;
+  }
+}
+
+/*# sourceMappingURL=experience.css.map */

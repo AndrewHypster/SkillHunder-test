@@ -1,0 +1,129 @@
+.it-specialists, .digital-markers {
+  position: relative;
+  margin-top: 168px;
+}
+.it-specialists::before, .digital-markers::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: 200px;
+  background: var(--Orange);
+  filter: blur(100px);
+}
+.it-specialists .text, .digital-markers .text {
+  height: 219px;
+  justify-content: space-between;
+  display: flex;
+}
+.it-specialists .text .title, .digital-markers .text .title {
+  gap: 20px;
+  display: grid;
+}
+.it-specialists .text h5, .digital-markers .text h5 {
+  font-size: 11px;
+  color: var(--Orange);
+}
+.it-specialists .text p, .digital-markers .text p {
+  font-size: 14px;
+  color: var(--Gray);
+}
+.it-specialists .text .tools, .digital-markers .text .tools {
+  align-self: end;
+  gap: 20px;
+  display: grid;
+}
+.it-specialists .text .tools ul, .digital-markers .text .tools ul {
+  gap: 12px;
+  display: grid;
+}
+.it-specialists .text .tools ul li, .digital-markers .text .tools ul li {
+  position: relative;
+  padding-left: 12px;
+}
+.it-specialists .text .tools ul li::before, .digital-markers .text .tools ul li::before {
+  content: "-";
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(0%, -15%);
+  color: var(--Gray);
+}
+.it-specialists .statistyc, .digital-markers .statistyc {
+  margin-top: 80px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  display: flex;
+}
+@media (max-width: 920px) {
+  .it-specialists .statistyc, .digital-markers .statistyc {
+    width: fit-content;
+    margin: 80px auto 0;
+    gap: 24px;
+    display: grid;
+  }
+}
+.it-specialists .statistyc li, .digital-markers .statistyc li {
+  width: 153px;
+  padding: 24px;
+  background: rgba(0, 0, 0, 0.15);
+  border-radius: 12px;
+}
+.it-specialists .statistyc li .top, .digital-markers .statistyc li .top {
+  justify-content: space-between;
+  display: flex;
+}
+.it-specialists .statistyc li .top div, .digital-markers .statistyc li .top div {
+  height: 15px;
+  gap: 8px;
+  display: flex;
+}
+.it-specialists .statistyc li spam, .digital-markers .statistyc li spam {
+  margin: 8px 0;
+  font-family: sans-serif;
+  font-weight: 800;
+  font-size: 24px;
+  display: block;
+}
+.it-specialists .statistyc li p, .digital-markers .statistyc li p {
+  font-size: 12px;
+}
+.it-specialists .posts, .digital-markers .posts {
+  position: relative;
+  z-index: -1;
+  width: fit-content;
+  margin: 0 auto;
+  gap: 24px;
+  display: flex;
+}
+.it-specialists .posts li, .digital-markers .posts li {
+  transform: rotate(22deg);
+}
+.it-specialists .posts .down, .digital-markers .posts .down {
+  transform: translateY(50%);
+}
+
+@media (max-width: 780px) {
+  .it-specialists .text, .digital-markers .text {
+    height: fit-content;
+    gap: 32px;
+    justify-content: center;
+    display: grid;
+  }
+}
+
+.digital-markers .statistyc li {
+  width: 216px;
+}
+.digital-markers .post {
+  height: 439px;
+  background-image: url("../public/imgs/post4.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/*# sourceMappingURL=it-specialists.css.map */

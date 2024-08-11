@@ -1,0 +1,60 @@
+.tranding
+  margin-top: 200px
+
+  ul
+    position: relative
+    margin-top: 56px
+    row-gap: 40px
+    justify-content: space-between
+    flex-wrap: wrap
+    display: flex
+    li
+      width: 146px
+      padding: 22px
+      border: 1px solid var(--White)
+      border-radius: 8px
+      background: var(--Black)
+      flex-direction: column
+      justify-content: space-between
+      display: flex
+
+      h3
+        font-size: 16px
+        font-weight: 600
+      p
+        margin: 20px 0 32px
+        font-size: 13px
+        font-weight: 400
+        color: var(--Gray)
+      button
+        width: 100%
+        padding: 10px
+        background: none
+        border: 1px solid var(--White)
+        border-radius: 100vw
+        align-self: end
+      &:hover
+        width: 187px
+        background: var(--Orange)
+        border: none
+
+        h3
+          font-size: 22px
+        p
+          font-size: 14px
+          font-weight: 600
+          color: var(--White)
+        button
+          background: var(--White)
+          color: var(--Orange)
+    @media (max-width: 600px)
+      gap: 40px
+      justify-content: center
+
+  hr
+    position: absolute
+    z-index: -1
+    top: 50%
+    width: 98%
+    @media (max-width: 920px)
+      display: none

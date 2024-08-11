@@ -1,0 +1,52 @@
+.recruitment
+  position: relative
+  height: 361px
+  margin-top: 61px
+  display: grid
+  @media (max-width: 645px)
+    height: fit-content
+  
+  img
+    position: absolute
+    z-index: -1
+    top: 0
+    left: 50%
+    transform: translate(-50%)
+  
+  .hr-agency
+    @media (max-width: 645px)
+        display: none
+  .hr
+    transform: none
+    right: 0
+    display: none
+    @media (max-width: 645px)
+        display: block
+    
+  ul
+    margin-top: 56px
+    gap: 12px
+    flex-wrap: wrap
+    display: flex
+
+    li
+      width: 211px
+      height: 133px
+      border: 1px solid var(--White)
+      border-radius: 12px
+      align-content: center
+      @media (max-width: 520px)
+        width: 134px
+        margin: 0 auto
+
+      p
+        width: 158px
+        margin: 0 auto
+        font-size: 14px
+        text-align: center
+        display: block
+        @media (max-width: 645px)
+          width: 74px
+          margin: 0 auto
+          font-size: 13px
+

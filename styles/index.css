@@ -1,0 +1,68 @@
+:root {
+  --White: #fff;
+  --Black: #151515;
+  --Gray: #CBCBCB;
+  --Orange: #FF8A00;
+  --Blue: #8FC1FF;
+  --Gold: #FCD14F;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  color: var(--White);
+  transition: all 0.3s;
+  font-family: "Raleway", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover, button:hover {
+  filter: brightness(1.2);
+  cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-size: 2.625rem;
+  font-weight: 800;
+}
+@media (max-width: 600px) {
+  h2 {
+    font-size: 1.5rem;
+  }
+}
+
+h5 {
+  color: var(--Orange);
+  text-transform: uppercase;
+  font-size: 11px;
+}
+
+section, footer {
+  max-width: 928px;
+  margin: 0 auto;
+  padding: 0 48px;
+}
+
+html {
+  background: var(--Black);
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.section-content, .main-content, header, footer {
+  max-width: 880px;
+  margin: 0 auto;
+}
+
+/*# sourceMappingURL=index.css.map */
